@@ -26,10 +26,22 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
+p + p {
+    margin: 15px;
+}
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 .btn {
@@ -114,5 +126,49 @@ header .container {
     opacity: 0.7;
     font-size: 0 18px;
     margin: 40px 0;
+}
+
+/* Карточки */
+
+.food-list {
+    padding: 100px 0;
+}
+
+.food-list__card {
+    width: 260px;
+    /* Обрезаем изображение по контейнеру */
+    overflow: hidden;
+
+    border-radius: 10px;
+    background-color: darkslategray;
+
+    text-align: center;
+}
+
+.food-list__img {
+    height: 175px;
+    /* Растянуть изображение по блоку */
+    object-fit: cover;
+}
+
+.food-list .container {
+    display: flex;
+    justify-content: space-between;
+    /* Адаптация контейнеров, перенос контейнеров по ширине */
+    flex-wrap: wrap;
+    /* Расстояние между элементами внутри контейнера */
+    gap: 40px 10px;
+}
+
+.food-list__text-wrapper {
+    padding: 30px 20px;
+}
+
+.food-list__title {
+    font-size: 20px;
+}
+
+.food-list__desc {
+    opacity: 0.7;
 }
 
