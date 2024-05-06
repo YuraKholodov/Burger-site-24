@@ -10,13 +10,20 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
     margin: 0;
 }
 
 .container {
-    max-width: 1140px;
+    box-sizing: border-box;
+
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -30,7 +37,7 @@ p {
     margin: 0;
 }
 
-p + p {
+p+p {
     margin: 15px;
 }
 
@@ -62,6 +69,13 @@ img {
 
 .btn:hover {
     opacity: 0.7;
+}
+
+.btn--small {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+
 }
 
 /* Шапка */
@@ -140,7 +154,7 @@ header .container {
     overflow: hidden;
 
     border-radius: 10px;
-    background-color: darkslategray;
+    background-color: #312f30;
 
     text-align: center;
 }
@@ -172,3 +186,133 @@ header .container {
     opacity: 0.7;
 }
 
+/* Order */
+
+.order {
+    background-color: #312f30;
+    padding: 60px 0;
+}
+
+.order .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 90px;
+}
+
+.order__image {
+    max-width: 470px;
+}
+
+.order__text {
+    max-width: 370px;
+}
+
+.order__title {
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+
+.order__desc {
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.order__price {
+    color: chocolate;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+.order__price--old {
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.order__price+.order__price {
+    margin-left: 3px;
+}
+
+.order .btn {
+    margin-top: 10px;
+}
+
+/* Product section */
+
+.product {
+    padding: 150px 0;
+}
+
+.product .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product__card {
+    box-sizing: border-box;
+
+    width: 555px;
+    min-height: 300px;
+
+    padding: 60px 30px 60px 290px;
+
+    /* На случай если картинка не подгрузится */
+    background-color: brown;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product__card:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 290px;
+}
+
+.product__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product__desc {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.product__price {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: chocolate;
+}
+
+.product__price+.product__price {
+    margin-left: 5px;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.product .btn {
+    margin-top: 10px;
+}
+
+.card-queen {
+    background-image: url(./images/product-1.jpg);
+}
+
+.card-hut {
+    background-image: url(./images/product-2.jpg);
+}
+
+.card-king {
+    background-image: url(./images/product-3.jpg);
+}
+
+.card-johns {
+    background-image: url(./images/product-4.jpg);
+}
