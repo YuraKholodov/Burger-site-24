@@ -1,13 +1,12 @@
 /*Общие стили */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 body {
-    margin: 0;
-    background-color: black;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -16,303 +15,340 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 500;
-    margin: 0;
+  font-weight: 500;
+  margin: 0;
 }
 
 .container {
-    box-sizing: border-box;
-
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+  box-sizing: border-box;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
-p+p {
-    margin: 15px;
+p + p {
+  margin: 15px;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: chocolate;
-    width: 165px;
-    height: 50px;
-    border-radius: 5px;
+  background-color: chocolate;
+  width: 165px;
+  height: 50px;
+  border-radius: 5px;
 
-    font-weight: 500;
-    font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .btn--small {
-    width: 140px;
-    height: 40px;
-    font-size: 12px;
-
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
 }
 
 /* Шапка */
 
 .header {
-    padding: 25px 0;
+  padding: 25px 0;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .header__nav a {
-    opacity: 0.7;
-    transition: 0.3s;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .header__nav a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .header__nav a.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Приветственная секция */
 
 .welcome {
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 200px 0;
-    margin-top: -150px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 200px 0;
+  margin-top: -150px;
 
-    background-image: url("./images/welcome-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("./images/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .welcome__text {
-    width: 550px;
+  width: 550px;
 }
 
 .welcome__subtitle {
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    margin-bottom: 7px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
 }
 
 .welcome__title {
-    font-size: 58px;
+  font-size: 58px;
 }
 
 .welcome__desc {
-    opacity: 0.7;
-    font-size: 0 18px;
-    margin: 40px 0;
+  opacity: 0.7;
+  font-size: 0 18px;
+  margin: 40px 0;
 }
 
 /* Карточки */
 
 .food-list {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .food-list__card {
-    width: 260px;
-    /* Обрезаем изображение по контейнеру */
-    overflow: hidden;
+  width: 260px;
+  /* Обрезаем изображение по контейнеру */
+  overflow: hidden;
 
-    border-radius: 10px;
-    background-color: #312f30;
+  border-radius: 10px;
+  background-color: #312f30;
 
-    text-align: center;
+  text-align: center;
 }
 
 .food-list__img {
-    height: 175px;
-    /* Растянуть изображение по блоку */
-    object-fit: cover;
+  height: 175px;
+  /* Растянуть изображение по блоку */
+  object-fit: cover;
 }
 
 .food-list .container {
-    display: flex;
-    justify-content: space-between;
-    /* Адаптация контейнеров, перенос контейнеров по ширине */
-    flex-wrap: wrap;
-    /* Расстояние между элементами внутри контейнера */
-    gap: 40px 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Адаптация контейнеров, перенос контейнеров по ширине */
+  flex-wrap: wrap;
+  /* Расстояние между элементами внутри контейнера */
+  gap: 40px 10px;
 }
 
 .food-list__text-wrapper {
-    padding: 30px 20px;
+  padding: 30px 20px;
 }
 
 .food-list__title {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .food-list__desc {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* Order */
 
 .order {
-    background-color: #312f30;
-    padding: 60px 0;
+  background-color: #312f30;
+  padding: 60px 0;
 }
 
 .order .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 90px;
 }
 
 .order__image {
-    max-width: 470px;
+  max-width: 470px;
 }
 
 .order__text {
-    max-width: 370px;
+  max-width: 370px;
 }
 
 .order__title {
-    font-size: 44px;
-    margin-bottom: 25px;
+  font-size: 44px;
+  margin-bottom: 25px;
 }
 
 .order__desc {
-    opacity: 0.7;
-    margin-bottom: 15px;
+  opacity: 0.7;
+  margin-bottom: 15px;
 }
 
 .order__price {
-    color: chocolate;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.1em;
+  color: chocolate;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
 }
 
 .order__price--old {
-    opacity: 0.5;
-    text-decoration: line-through;
-    font-size: 16px;
+  opacity: 0.5;
+  text-decoration: line-through;
+  font-size: 16px;
 }
 
-.order__price+.order__price {
-    margin-left: 3px;
+.order__price + .order__price {
+  margin-left: 3px;
 }
 
 .order .btn {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Product section */
 
 .product {
-    padding: 150px 0;
+  padding: 150px 0;
 }
 
 .product .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .product__card {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    width: 555px;
-    min-height: 300px;
+  width: 555px;
+  min-height: 300px;
 
-    padding: 60px 30px 60px 290px;
+  padding: 60px 30px 60px 290px;
 
-    /* На случай если картинка не подгрузится */
-    background-color: brown;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  /* На случай если картинка не подгрузится */
+  background-color: brown;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .product__card:nth-child(even) {
-    padding-left: 30px;
-    padding-right: 290px;
+  padding-left: 30px;
+  padding-right: 290px;
 }
 
 .product__title {
-    font-size: 30px;
-    margin-bottom: 20px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .product__desc {
-    opacity: 0.7;
-    margin-bottom: 10px;
+  opacity: 0.7;
+  margin-bottom: 10px;
 }
 
 .product__price {
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    color: chocolate;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: chocolate;
 }
 
-.product__price+.product__price {
-    margin-left: 5px;
+.product__price + .product__price {
+  margin-left: 5px;
 }
 
 .product__price--old {
-    text-decoration: line-through;
-    opacity: 0.5;
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .product .btn {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card-queen {
-    background-image: url(./images/product-1.jpg);
+  background-image: url(./images/product-1.jpg);
 }
 
 .card-hut {
-    background-image: url(./images/product-2.jpg);
+  background-image: url(./images/product-2.jpg);
 }
 
 .card-king {
-    background-image: url(./images/product-3.jpg);
+  background-image: url(./images/product-3.jpg);
 }
 
 .card-johns {
-    background-image: url(./images/product-4.jpg);
+  background-image: url(./images/product-4.jpg);
+}
+
+/* Feedback */
+
+.feedback {
+  padding-bottom: 200px;
+}
+
+.feedback .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 880px;
+}
+
+.feedback__text {
+  margin: 0;
+  text-align: center;
+}
+
+.feedback__text::before {
+  content: url(./images/icons/quote.svg);
+}
+
+.feedback__desc {
+  width: 370px;
+  opacity: 0.7;
+  margin: 30px 0;
+}
+.feedback__author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+.feedback__subauthor {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+  display: block;
 }
